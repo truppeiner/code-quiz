@@ -1,7 +1,7 @@
 let timer = document.querySelector('.timer-clock');
 
 let startQuiz = function() {
-    let firstQuestion = function() {
+    let Questions = function() {
         let quizQuestion = document.querySelector(".quiz-question");
             quizQuestion.textContent="What language creates the basic layout of any website?"
             document.querySelector('.start-section').hidden = true;
@@ -38,13 +38,24 @@ let startQuiz = function() {
                 answerOneC.className = 'btn btn-danger m-3 answer-2 w-50';
                 answerOneC.textContent = 'incorrect try again!';
             }
-    }
+        function secondQuestion(){
+            // create second question
+            quizQuestion.textContent = "What semantic tag would you use to create a header in HTML?"
+            answerOneA.textContent = '<header>';
+            questionOneA.addEventListener('click', thirdQuestion);
 
-    let secondQuestion = function () {
-        console.log('test');
-        
+            answerOneB.className = "btn btn-success m-3 answer-2 w-50";
+            answerOneB.textContent = '<p>';
+
+            answerOneC.className = "btn btn-success m-3 answer-2 w-50";
+            answerOneC.textContent = '<div>';
+        }
+
+        function thirdQuestion(){
+            console.log('test');
+        }
     }
-    firstQuestion();
+    Questions();
 }
 
 
