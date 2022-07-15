@@ -1,6 +1,6 @@
 # code-quiz
 a quiz created to showcase skills with and JavaScript. 
 
-#Screenshot
+# Screenshot
 
-#Deployed Link 
+# Deployed Link 
